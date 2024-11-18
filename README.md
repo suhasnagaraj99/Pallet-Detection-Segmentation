@@ -55,7 +55,7 @@ A pretrained YOLOv11 model was then fine-tuned on the augmented dataset, optimiz
   ```bash
   ros2 run pallet_pkg pallet_seg_alt
   ```
-- Note: Please ensure the camera topics match before running the nodes
+- Note: Please ensure the camera topics match before running the nodes and please ensure the correct ROS_DOMAIN_ID
 
 ## Results
 - After training the model for 100 epochs, the follwoing results were achieved:
