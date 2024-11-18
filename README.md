@@ -3,12 +3,13 @@ A pallet detection and segmentation application in ROS2 for a manufacturing or w
 
 ## Project Description
 
-This project focuses on training a deep learning model for real-time detection and segmentation of pallets and the ground in an industrial setting. The process began by curating a custom dataset, which was manually annotated using CVAT and Roboflow platforms to ensure accurate labeling. A pretrained YOLOv11 model was then fine-tuned on this dataset to adapt it for the specific detection task.
+This project focuses on training a deep learning model for real-time detection and segmentation of pallets and the ground in an industrial setting. The first step involved creating a custom dataset, which was manually annotated using CVAT and Roboflow platforms to ensure precise labeling. To enhance the model's ability to generalize to different real-world conditions, the training data was augmented by varying the brightness of the images using the PIL library. This simulation of different lighting conditions helps the model perform robustly in varying environments.
 
-Once the model was trained, it was integrated into a ROS2 node for seamless, real-time pallet detection and segmentation within the industrial environment. To simplify deployment and enhance scalability, the entire solution was containerized using Docker, allowing for efficient deployment in varied production environments.
+A pretrained YOLOv11 model was then fine-tuned on the augmented dataset, optimizing it for the specific task of pallet detection and segmentation in the industrial context. Following training, the model was integrated into a ROS2 node, enabling real-time detection and segmentation of pallets. To simplify deployment and ensure scalability, the entire system was containerized using Docker, making it easy to deploy across different environments.
 
 ## Key Steps:
 - Dataset Creation: Manual annotation of images using CVAT and Roboflow.
+- Data Augmentation: Applied brightness variations (using the PIL library) to simulate diverse real-world lighting conditions.
 - Model Training: Fine-tuning a pretrained YOLOv11 model on the custom dataset.
 - Integration: Embedding the trained model into a ROS2 node for real-time processing.
 - Containerization: Packaging the solution into a Docker container for easy deployment and scalability.
