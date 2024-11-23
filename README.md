@@ -21,7 +21,7 @@ A pretrained YOLOv11 model was then fine-tuned on the augmented dataset, optimiz
    - Please ensure the host system has a cuda version compatible with cuda 12.6 (docker has cuda 12.6 installed)
 2. **Pull the docker image**
   ```bash
-  docker pull suhasnagaraj1999/umd:pallet_segmentation
+  docker pull suhasnagaraj1999/umd:pallet_segmentation2
   ```
 3. **Create a docker container**
   ```bash
