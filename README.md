@@ -18,11 +18,13 @@ A pretrained YOLOv11 model was then fine-tuned on the augmented dataset, optimiz
 
 1. **Setup**
    - Please make sure docker is installed on the host system
-   - Please ensure the host system has a cuda version compatible with cuda 12.6 (docker has cuda 12.6 installed)
+   - Please ensure the host system has a cuda version compatible with cuda 12.6 (docker has cuda 12.4 installed)
 2. **Pull the docker image**
   ```bash
   docker pull suhasnagaraj1999/umd:pallet_segmentation2
   ```
+   - Or download the docker image `.tar` file from the following link: [Image](https://drive.google.com/file/d/1FJVkpe0A8yTDg9IkZ_pNPHOgW_XnAauP/view?usp=sharing).
+
 3. **Create a docker container**
   ```bash
   docker run -it --gpus all --net=host -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix --name segmentation_container suhasnagaraj1999/umd:pallet_segmentation
