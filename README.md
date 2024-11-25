@@ -62,3 +62,4 @@ A pretrained YOLOv11 model was then fine-tuned on the augmented dataset, optimiz
 ## Results
 - After training the model for 100 epochs, the follwoing results were achieved:
 ![alt text](https://github.com/suhasnagaraj99/Pallet-Detection-Segmentation/blob/main/seg_val1.png?raw=true)
+- You can also download the model weights from the following link: [Model](https://drive.google.com/file/d/18T_3oycStUrQFh8nb3ZwMZKUY1QnI7xb/view?usp=sharing).
